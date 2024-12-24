@@ -6,13 +6,12 @@
 #include <errno.h>
 #include <sys/stat.h>
 #include <limits.h>
+#include "file_operations.h"
+#include "logger.h"
 
 #ifndef PATH_MAX
 #define PATH_MAX 4096
 #endif
-
-#include "file_operations.h"
-#include "logger.h"
 
 /*
  * Copies a file from source to destination
